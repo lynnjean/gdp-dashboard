@@ -291,7 +291,7 @@ else:
     st.subheader('상세 결과')
 
     for i, answer in enumerate(st.session_state.answers):
-        with st.expander(f'**문제 {i+1}**:{'✅' if answer['is_collect'] else '✖️'}'):
+        with st.expander(f"**문제 {i+1}**:{'✅' if answer['is_collect'] else '✖️'}"):
             st.write(f'문제 : {answer["question"]}')
 
             # radio, selectbox
